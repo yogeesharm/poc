@@ -19,7 +19,7 @@ There is a form to add new user.
 To update the user, click on the edit link provided in the user details table. User details will be populated in the form, edit the details and click on Update button.
 To delete the User, click on the delete link provided in the user details table. This will delete the user details.
 
-The war file is also attached for easy deployment of the application.
+The war file is also attached(target/RestPoc.war) for easy deployment of the application.
 
 Junit test.
 The test cases for testing the REST services are written inside the RestControlerTest class.
