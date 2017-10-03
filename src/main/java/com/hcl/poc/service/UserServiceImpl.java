@@ -11,7 +11,6 @@ import com.hcl.poc.repository.UserRepository;
 
 /**
  * Service implementation for {@link User}
- * @author 18965
  *
  */
 @Service
