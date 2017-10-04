@@ -5,8 +5,13 @@ import org.apache.log4j.Logger;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
 
-import com.hcl.poc.controler.RestControler;
+import com.hcl.poc.controller.RestController;
 
+/**
+ * Configuration class for the Jersey REST application
+ * @author Yogeesha R M
+ *
+ */
 public class RestApplication extends ResourceConfig {
 
 	private final static Logger ORG_GLASSFISH_JERSEY_LOGGER = Logger
@@ -17,7 +22,7 @@ public class RestApplication extends ResourceConfig {
 	
 	public RestApplication() {
 		register(RequestContextFilter.class);
-		register(RestControler.class);
+		register(RestController.class);
 		register(CustomJsonWriter.class);
 		register(CORSFilter.class);
 	}

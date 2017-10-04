@@ -15,6 +15,11 @@ import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.core.MultivaluedMap;
 
+/**
+ * CORS filter for the application to allow all the origins 
+ * @author Yogeesha R M
+ *
+ */
 public class CORSFilter implements ContainerResponseFilter, Filter {
 
 	@Override

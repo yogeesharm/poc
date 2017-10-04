@@ -6,6 +6,13 @@ import java.util.List;
 
 import com.hcl.poc.exception.POCException;
 
+/**
+ * Generic Servie interface
+ * @author Yogeesha R M
+ *
+ * @param <T> Entity
+ * @param <ID> Primary key of the Entity
+ */
 public interface GenericService<T, ID extends Serializable> {
 	
 	/**

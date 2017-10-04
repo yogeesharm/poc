@@ -16,6 +16,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.hcl.poc.exception.POCPersistenceException;
 
+/**
+ * Generic repository implementation
+ * @author Yogeesha R M
+ *
+ * @param <T> Entity
+ * @param <ID> Primary key value of the Entity
+ */
 @Component
 @SuppressWarnings("unchecked")
 @Transactional(readOnly = true)

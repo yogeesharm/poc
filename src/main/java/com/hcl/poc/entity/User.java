@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.hcl.poc.entity;
 
 import java.io.Serializable;

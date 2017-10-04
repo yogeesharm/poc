@@ -10,10 +10,16 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 
 
+/**
+ * Custom JSON provider for the application
+ * @author Yogeesha R M
+ *
+ */
 @Component
 @Provider
 public class CustomJsonWriter extends JacksonJsonProvider{
-    public CustomJsonWriter() {}
+   
+	public CustomJsonWriter() {}
 
     @Override
     public ObjectMapper locateMapper(Class<?> type, MediaType mediaType) {

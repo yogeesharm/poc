@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.hcl.poc.repository;
 
 import org.springframework.stereotype.Repository;

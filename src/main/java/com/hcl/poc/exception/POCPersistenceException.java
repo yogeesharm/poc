@@ -1,5 +1,10 @@
 package com.hcl.poc.exception;
 
+/**
+ * Persistence exception class for the application
+ * @author Yogeesha R M
+ *
+ */
 public class POCPersistenceException extends Exception {
 
 	private static final long serialVersionUID = 1L;
@@ -9,29 +14,26 @@ public class POCPersistenceException extends Exception {
     private String errorCode = TECHNICAL_ERROR_CODE;
 
     /**
-     * Constructs a new EloqueConnectorException.
+     * Constructs a new POCPersistenceException.
      */
     public POCPersistenceException() {
         super();
     }
 
     /**
-     * Constructs a new EloqueConnectorException with its detail message.
+     * Constructs a new POCPersistenceException with its detail message.
      * 
-     * @param message
-     *            String
+     * @param message String
      */
     public POCPersistenceException(String message) {
         super(message);
     }
 
     /**
-     * Constructs a new EloqueConnectorException with its detail message and cause.
+     * Constructs a new POCPersistenceException with its detail message and cause.
      * 
-     * @param message
-     *            String
-     * @param cause
-     *            Throwable
+     * @param message String
+     * @param cause Throwable
      */
     public POCPersistenceException(String message, Throwable cause) {
         super(message, cause);
@@ -44,12 +46,10 @@ public class POCPersistenceException extends Exception {
     }
 
     /**
-     * Constructs a new EloqueConnectorException with its detail message and error code.
+     * Constructs a new POCPersistenceException with its detail message and error code.
      * 
-     * @param errorCode
-     *            String
-     * @param message
-     *            String
+     * @param errorCode String
+     * @param message String
      */
     public POCPersistenceException(String errorCode, String message) {
         super(message);
@@ -57,15 +57,11 @@ public class POCPersistenceException extends Exception {
     }
 
     /**
-     * Constructs a new EloqueConnectorException with error code, its detail message and
-     * actual cause.
+     * Constructs a new POCPersistenceException with error code, its detail message and actual cause.
      * 
-     * @param errorCode
-     *            String
-     * @param message
-     *            String
-     * @param cause
-     *            Throwable
+     * @param errorCode String
+     * @param message String
+     * @param cause Throwable
      */
     public POCPersistenceException(String errorCode, String message, Throwable cause) {
         super(message, cause);
@@ -75,8 +71,7 @@ public class POCPersistenceException extends Exception {
     /**
      * Constructs a new EloqueConnectorException with actual cause.
      * 
-     * @param cause
-     *            Throwable
+     * @param cause Throwable
      */
     public POCPersistenceException(Throwable cause) {
         this(EXCEPTION_HEADER, cause);
@@ -131,8 +126,7 @@ public class POCPersistenceException extends Exception {
     /**
      * set error code.
      * 
-     * @param errorCode
-     *            String
+     * @param errorCode String
      */
     public void setErrorCode(String errorCode) {
         this.errorCode = errorCode;

@@ -1,5 +1,10 @@
 package com.hcl.poc.exception;
 
+/**
+ * Service Exception class for the application
+ * @author Yogeesha R M
+ *
+ */
 public class POCException extends Exception {
     
 	private static final long serialVersionUID = 1L;
@@ -9,14 +14,14 @@ public class POCException extends Exception {
     private String errorCode = TECHNICAL_ERROR_CODE;
 
     /**
-     * Constructs a new EloqueConnectorException.
+     * Constructs a new POCException.
      */
     public POCException() {
         super();
     }
 
     /**
-     * Constructs a new EloqueConnectorException with its detail message.
+     * Constructs a new POCException with its detail message.
      * 
      * @param message
      *            String
@@ -26,12 +31,10 @@ public class POCException extends Exception {
     }
 
     /**
-     * Constructs a new EloqueConnectorException with its detail message and cause.
+     * Constructs a new POCException with its detail message and cause.
      * 
-     * @param message
-     *            String
-     * @param cause
-     *            Throwable
+     * @param message String
+     * @param cause Throwable
      */
     public POCException(String message, Throwable cause) {
         super(message, cause);
@@ -44,12 +47,10 @@ public class POCException extends Exception {
     }
 
     /**
-     * Constructs a new EloqueConnectorException with its detail message and error code.
+     * Constructs a new POCException with its detail message and error code.
      * 
-     * @param errorCode
-     *            String
-     * @param message
-     *            String
+     * @param errorCode String
+     * @param message String
      */
     public POCException(String errorCode, String message) {
         super(message);
@@ -57,15 +58,11 @@ public class POCException extends Exception {
     }
 
     /**
-     * Constructs a new EloqueConnectorException with error code, its detail message and
-     * actual cause.
+     * Constructs a new POCException with error code, its detail message and actual cause.
      * 
-     * @param errorCode
-     *            String
-     * @param message
-     *            String
-     * @param cause
-     *            Throwable
+     * @param errorCode String
+     * @param message String
+     * @param cause Throwable
      */
     public POCException(String errorCode, String message, Throwable cause) {
         super(message, cause);
@@ -73,10 +70,9 @@ public class POCException extends Exception {
     }
 
     /**
-     * Constructs a new EloqueConnectorException with actual cause.
+     * Constructs a new POCException with actual cause.
      * 
-     * @param cause
-     *            Throwable
+     * @param cause Throwable
      */
     public POCException(Throwable cause) {
         this(EXCEPTION_HEADER, cause);
@@ -111,7 +107,7 @@ public class POCException extends Exception {
     }
 
     /**
-     * returns excpetion header.
+     * returns exception header.
      * 
      * @return String
      */
@@ -131,8 +127,7 @@ public class POCException extends Exception {
     /**
      * set error code.
      * 
-     * @param errorCode
-     *            String
+     * @param errorCode String
      */
     public void setErrorCode(String errorCode) {
         this.errorCode = errorCode;

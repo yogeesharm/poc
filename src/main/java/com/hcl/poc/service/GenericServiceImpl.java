@@ -12,6 +12,13 @@ import com.hcl.poc.exception.POCPersistenceException;
 import com.hcl.poc.repository.GenericRepository;
 
 
+/**
+ * Generic service implementation
+ * @author Yogeesha R M
+ *
+ * @param <T> Entity
+ * @param <ID> Primary key of the Entity
+ */
 @Transactional(readOnly = true)
 public class GenericServiceImpl<T, ID extends Serializable> implements GenericService<T, ID>{
 

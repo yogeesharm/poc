@@ -9,6 +9,13 @@ import org.springframework.data.repository.NoRepositoryBean;
 
 import com.hcl.poc.exception.POCPersistenceException;
 
+/**
+ * Generic Repository interface 
+ * @author Yogeesha R M
+ *
+ * @param <T> Entity class
+ * @param <ID> Primary key value of the Entity
+ */
 @NoRepositoryBean
 public interface GenericRepository<T, ID extends Serializable> {
 
